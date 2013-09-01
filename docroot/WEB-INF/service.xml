@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="de.markusf.shout">
+	<author>Markus Feindler</author>
+	<namespace>Shout</namespace>
+
+	<entity name="Shout" local-service="true" remote-service="false">
+	
+		<column name="shoutId" type="long" primary="true" />
+		<column name="senderId" type="long" />
+		<column name="scopeId" type="long" />
+		<column name="publishDate" type="Date" />
+		<column name="message" type="String" />
+		<!-- Finder methods -->
+
+		<finder name="ScopeId" return-type="Collection">
+			<finder-column name="scopeId" />
+		</finder>
+		
+	</entity>
+</service-builder>

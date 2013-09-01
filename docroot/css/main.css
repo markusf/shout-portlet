@@ -1,0 +1,123 @@
+.shoutbox {
+	background-color: #FFFFFF;
+	width: auto;
+	padding: 4px 0;
+	border: 2px solid #e1e4e8;
+	border-radius: 8px;
+	font-family: Verdana;
+	font-size: 12px;
+	color: #a1a8b4;
+}
+
+.shoutInputContainer {
+	padding: 5px;
+	font-size: 0;
+}
+
+.shoutInputContainer div {
+	display: inline-block;
+	height: 39px;
+	vertical-align: top;
+}
+
+.shoutInputLeft {
+	width: 6px;
+	background: url('textbox_left.png') no-repeat;
+}
+
+.shoutInputWrapper {
+	background: url('textbox_bg.png') repeat-x;
+	/* this should be dynamic in future */
+	width: 250px;
+}
+
+.shoutInputWrapper  input, .shoutInputWrapper input.focus {
+	border: none !important;
+	margin: 11px 0 0 10px !important;
+	padding: 0 !important;
+	width: 90%;
+	display: block;
+	color: #a1a8b4;
+	font-family: Verdana !important;
+	font-size: 12px !important;
+	background: none !important;
+}
+
+.shoutPublish {
+	cursor: pointer;
+	width: 55px;
+	background: url('send.png') no-repeat;
+}
+
+.shoutPublish:hover {
+	background: url('send_hovered.png') no-repeat;
+}
+
+.shouts {
+	display: relative;
+	margin-right: 5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 400px;
+}
+
+.shout {
+	display: none;
+	border-bottom: 1px solid #edeff2;
+	min-height: 55px;
+	padding: 7px 5px 5px;
+}
+
+.shoutMeta {
+	margin-left: 62px;
+	margin: 4px 0 4px 62px;
+}
+
+.shoutMeta .author {
+	font-weight: bold;
+	font-size: 14px;
+	color: #7c868d;
+}
+
+.shoutMeta .date, .shoutMeta .controls{
+	font-size: 9px;
+}
+
+.shoutContent {
+	margin-left: 62px;
+	line-height: 18px;
+}
+
+.shout .avatar {
+	float: left;
+	border-radius: 6px;
+	width: 50px;
+	height: 50px;
+}
+
+.shout:last-child {
+	border: none;
+}
+
+.shoutboxFooter {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+
+.load-button {
+	cursor: pointer;
+	color: #a1a8b4;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	background: url('more.png') no-repeat;
+	margin: 10px auto 5px auto;
+	width: 111px;
+	height: 26px;
+	padding: 6px 0 0 0;
+}
+
+.load-button:hover {
+	background: url('more_hovered.png') no-repeat;
+}

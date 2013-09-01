@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	
+	<portlet>
+		<portlet-name>Shout</portlet-name>
+		<display-name>Shout</display-name>
+		<portlet-class>de.markusf.shout.portlet.SpringAtmospherePortlet</portlet-class>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Shout</title>
+			<short-title>Shout</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+    <filter>
+        <filter-name>AtmosphereFilter</filter-name>
+        <filter-class>de.markusf.shout.portlet.AtmosphereResourceFilter</filter-class>
+        <lifecycle>RESOURCE_PHASE</lifecycle>
+    </filter>
+    <filter-mapping>
+        <filter-name>AtmosphereFilter</filter-name>
+        <portlet-name>Shout</portlet-name>
+    </filter-mapping>
+</portlet-app>
