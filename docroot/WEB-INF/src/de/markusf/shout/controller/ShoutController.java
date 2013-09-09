@@ -30,7 +30,6 @@ import de.markusf.shout.service.ShoutLocalServiceUtil;
 /**
  * TODO:
  * Delete own shouts
- * Button styles
  * i18n
  * scroll to bottom on loadmore
  * clean debug in js/java
